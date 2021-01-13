@@ -4,7 +4,7 @@ This is the correct version z3 configuration generator but
 what is missing is the functionality to receive the variables 
 from SysFileParser compoenent which is now implemented now.
 */
-package z3solver.z3ConfigurationGenerator;
+package z3solver.backup.z3ConfigurationGenerator;
 
 import com.microsoft.z3.BoolExpr;
 import com.microsoft.z3.IntExpr;

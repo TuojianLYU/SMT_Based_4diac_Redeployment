@@ -13,7 +13,7 @@ public class Main {
         // The swSkill and hwSkill are now manually defined
         int numMaxFBs = 5;
         int numOfContainers = 5;
-        String filePath = "xml/QX10.xml";
+        String filePath = "xml/QX20.xml";
 
         Z3Coordinator z3Coordinator = new Z3Coordinator(filePath, numMaxFBs, numOfContainers);
         z3Coordinator.initialization();

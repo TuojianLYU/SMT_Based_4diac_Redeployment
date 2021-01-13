@@ -15,6 +15,7 @@ public class MissionMeta {
     int[][] intensity;
     ArrayList<IntExpr> swSkillXlist;
     ArrayList<IntExpr> hwSkillXlist;
+    ArrayList<IntExpr> xlist = new ArrayList<>();
 
     public MissionMeta() {
     }
@@ -90,5 +91,13 @@ public class MissionMeta {
 
     public void setHwSkillXlist(ArrayList<IntExpr> hwSkillXlist) {
         this.hwSkillXlist = hwSkillXlist;
+    }
+
+    public ArrayList<IntExpr> getXlist() {
+        return xlist;
+    }
+
+    public void setXlist(ArrayList<IntExpr> xlist) {
+        this.xlist = xlist;
     }
 }

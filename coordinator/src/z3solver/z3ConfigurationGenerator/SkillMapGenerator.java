@@ -41,16 +41,16 @@ public class SkillMapGenerator {
         swSkill.put("x8", 1);
         swSkill.put("x9", 1);
 		swSkill.put("x10", 1);
-//		swSkill.put("x11", 1);
-//		swSkill.put("x12", 1);
-//		swSkill.put("x13", 1);
-//		swSkill.put("x14", 1);
-//		swSkill.put("x15", 1);
-//		swSkill.put("x16", 1);
-//		swSkill.put("x17", 1);
-//		swSkill.put("x18", 1);
-//		swSkill.put("x19", 1);
-//		swSkill.put("x20", 1);
+		swSkill.put("x11", 1);
+		swSkill.put("x12", 1);
+		swSkill.put("x13", 1);
+		swSkill.put("x14", 1);
+		swSkill.put("x15", 1);
+		swSkill.put("x16", 1);
+		swSkill.put("x17", 1);
+		swSkill.put("x18", 1);
+		swSkill.put("x19", 1);
+		swSkill.put("x20", 1);
 
         missionMeta.setSwSkillXlist(getSkillXlist(swSkill));
 
@@ -63,8 +63,8 @@ public class SkillMapGenerator {
             hwSkill.put(Integer.toString(i), 0);
         }
         hwSkill.put(Integer.toString(1), 1);
-//        hwSkill.put(Integer.toString(2), 1);
-//        hwSkill.put(Integer.toString(3), 1);
+        hwSkill.put(Integer.toString(2), 1);
+        hwSkill.put(Integer.toString(3), 1);
 
         missionMeta.setHwSkillXlist(getSkillXlist(hwSkill));
 

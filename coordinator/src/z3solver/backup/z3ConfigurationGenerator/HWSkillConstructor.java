@@ -1,4 +1,4 @@
-package z3solver.z3ConfigurationGenerator;
+package z3solver.backup.z3ConfigurationGenerator;
 
 import com.microsoft.z3.BoolExpr;
 import com.microsoft.z3.Context;
@@ -6,7 +6,6 @@ import com.microsoft.z3.IntExpr;
 import z3solver.model.MissionMeta;
 
 import java.util.ArrayList;
-import java.util.Map;
 
 public class HWSkillConstructor {
 

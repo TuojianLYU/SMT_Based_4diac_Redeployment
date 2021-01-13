@@ -1,4 +1,4 @@
-package z3solver.z3ConfigurationGenerator;
+package z3solver.backup.z3ConfigurationGenerator;
 
 import com.microsoft.z3.IntExpr;
 import z3solver.model.MissionMeta;

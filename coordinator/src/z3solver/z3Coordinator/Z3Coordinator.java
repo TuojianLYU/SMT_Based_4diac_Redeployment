@@ -21,7 +21,6 @@ import java.util.HashMap;
 public class Z3Coordinator {
 
     public MissionMeta missionMeta = new MissionMeta();
-    private Context ctx;
     private String filePath;
     private int numMaxFBs;
     private int numOfContainers;
@@ -37,7 +36,7 @@ public class Z3Coordinator {
     public void initialization() {
         HashMap<String, String> cfg = new HashMap<>();
         cfg.put("model", "true");
-        ctx = new Context(cfg);
+        Context ctx = new Context(cfg);
         // -------------------
         String file = this.filePath;
         try {
@@ -61,35 +60,4 @@ public class Z3Coordinator {
         return z3Generator.generating();
     }
 
-    public Context getCtx() {
-        return ctx;
-    }
-
-    public void setCtx(Context ctx) {
-        this.ctx = ctx;
-    }
-
-    public int getNumMaxFBs() {
-        return numMaxFBs;
-    }
-
-    public void setNumMaxFBs(int numMaxFBs) {
-        this.numMaxFBs = numMaxFBs;
-    }
-
-    public int getNumOfContainers() {
-        return numOfContainers;
-    }
-
-    public void setNumOfContainers(int numOfContainers) {
-        this.numOfContainers = numOfContainers;
-    }
-
-    public Z3Parser getZ3Parser() {
-        return z3Parser;
-    }
-
-    public void setZ3Parser(Z3Parser z3Parser) {
-        this.z3Parser = z3Parser;
-    }
 }

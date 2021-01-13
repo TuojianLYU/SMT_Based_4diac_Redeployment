@@ -6,7 +6,6 @@ import com.microsoft.z3.IntExpr;
 import z3solver.model.MissionMeta;
 
 import java.util.ArrayList;
-import java.util.Map;
 
 public class HWSkillConstructor {
 
@@ -16,7 +15,7 @@ public class HWSkillConstructor {
         this.missionMeta = missionMeta;
     }
 
-    public BoolExpr skillConstructing(Context ctx, int numOfFBs) {
+    public BoolExpr skillConstructing(Context ctx) {
 
         SkillMapGenerator skillMapGenerator = new SkillMapGenerator(missionMeta);
         skillMapGenerator.swMapGenerating();
