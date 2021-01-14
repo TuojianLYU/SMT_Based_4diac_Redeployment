@@ -1,11 +1,10 @@
 package z3solver.main;
 
 import com.microsoft.z3.Optimize;
-import z3solver.z3ConfigurationGenerator.Z3Generator;
 import z3solver.z3Coordinator.Z3Coordinator;
 
 public class Main {
-    public static void main(String[] args) throws Z3Generator.TestFailedException {
+    public static void main(String[] args) {
 
         long startTime = System.nanoTime();
         // This definition block is to define all the required variables for z3
@@ -13,7 +12,7 @@ public class Main {
         // The swSkill and hwSkill are now manually defined
         int numMaxFBs = 5;
         int numOfContainers = 5;
-        String filePath = "xml/QX20.xml";
+        String filePath = "xml/QX18.xml";
 
         Z3Coordinator z3Coordinator = new Z3Coordinator(filePath, numMaxFBs, numOfContainers);
         z3Coordinator.initialization();

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("CommentedOutCode")
 public class SkillMapGenerator {
 
     static Map<String, Integer> swSkill = new HashMap<>();
@@ -49,8 +50,8 @@ public class SkillMapGenerator {
 		swSkill.put("x16", 1);
 		swSkill.put("x17", 1);
 		swSkill.put("x18", 1);
-		swSkill.put("x19", 1);
-		swSkill.put("x20", 1);
+//		swSkill.put("x19", 1);
+//		swSkill.put("x20", 1);
 
         missionMeta.setSwSkillXlist(getSkillXlist(swSkill));
 

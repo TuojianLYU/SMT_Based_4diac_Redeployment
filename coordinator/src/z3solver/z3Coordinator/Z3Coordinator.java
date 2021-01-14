@@ -21,11 +21,11 @@ import java.util.HashMap;
 public class Z3Coordinator {
 
     public MissionMeta missionMeta = new MissionMeta();
-    private String filePath;
-    private int numMaxFBs;
-    private int numOfContainers;
-    private Z3Generator z3Generator = new Z3Generator();
-    private Z3Parser z3Parser = new Z3Parser();
+    private final String filePath;
+    private final int numMaxFBs;
+    private final int numOfContainers;
+    private final Z3Generator z3Generator = new Z3Generator();
+    private final Z3Parser z3Parser = new Z3Parser();
 
     public Z3Coordinator(String filePath, int numMaxFBs, int numOfContainers) {
         this.filePath = filePath;

@@ -28,12 +28,12 @@ public class Z3Parser {
             }
         }
 
-        Iterator it = dataConnectionMap.entrySet().iterator();
+        Iterator<Map.Entry<String, List<String>>> it = dataConnectionMap.entrySet().iterator();
         while (it.hasNext()) {
-            Map.Entry pair = (Map.Entry) it.next();
+            Map.Entry<String, List<String>> pair = it.next();
 
-            List<String> list = (List<String>) pair.getValue();
-            String temp = functionMap.get((String) pair.getKey());
+            List<String> list = pair.getValue();
+            String temp = functionMap.get(pair.getKey());
 
             Scanner sc = new Scanner(temp);
             sc.skip("[^0-9]*");
@@ -79,7 +79,7 @@ public class Z3Parser {
                 if (dataConnectionMap.containsKey(source)) {
                     dataConnectionMap.get(source).add(destination);
                 } else {
-                    List<String> destinations = new ArrayList<String>();
+                    List<String> destinations = new ArrayList<>();
                     destinations.add(destination);
                     dataConnectionMap.put(source, destinations);
                 }
@@ -92,7 +92,7 @@ public class Z3Parser {
 
     public static Map<String, String> findFB(Element root) {
         NodeList nList = root.getElementsByTagName("FB");
-        Map<String, String> functionBlockMap = new HashMap<String, String>();
+        Map<String, String> functionBlockMap = new HashMap<>();
 
         for (int i = 0, j = 1; i < nList.getLength(); i++) {
             Node node = nList.item(i);
