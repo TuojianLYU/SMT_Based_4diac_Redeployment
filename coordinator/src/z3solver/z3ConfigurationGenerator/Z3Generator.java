@@ -62,11 +62,8 @@ public class Z3Generator {
         numMaxFBs += 1; // the real number is the number of taken balls not the maximum number, so it
         // should plus 1
 
-
         BoolExpr iniBool = initializationConstructor.initializationConstructingMK();
-
         BoolExpr conBool = constraintsConstructor.getConstraints();
-
         BoolExpr minBool = minimizeSumConstructor.minimizeSumConstructing(missionMeta.getCtx(), xlist, numOfFBs, intensity, sumExp);
         BoolExpr skillBool = hwSkillConstructor.skillConstructing(missionMeta.getCtx());
         BoolExpr finalBool = missionMeta.getCtx().mkAnd(iniBool, conBool, minBool, skillBool);
